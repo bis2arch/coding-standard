@@ -1,1 +1,2 @@
-# coding-standard
+# BIS2Arch \ Coding Standard
+

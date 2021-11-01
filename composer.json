@@ -1,0 +1,13 @@
+{
+    "name": "bis2arch/coding-standard",
+    "authors": [
+        {
+            "name": "Marcos 'Marcão' Aurelio",
+            "email": "marcos.aurelio@bis2bis.com.br"
+        }
+    ],
+    "require": {
+        "squizlabs/php_codesniffer": "*",
+        "php": ">=5.4.0"
+    }
+}
