@@ -58,11 +58,7 @@
     <rule ref="v1.Security.LanguageConstruct.DirectOutput">
         <exclude-pattern>*.phtml</exclude-pattern>
     </rule>
-    <rule ref="PSR2">
-        <exclude name="PSR2.Classes.PropertyDeclaration.Underscore" />
-        <exclude name="PSR2.Classes.ClassDeclaration" />
-    </rule>
-    <rule ref="Squiz">
-        <exclude name="Squiz.Classes.ValidClassName"/>
-    </rule>
+    <exclude name="PSR2.Classes.PropertyDeclaration.Underscore" />
+    <exclude name="PSR2.Classes.ClassDeclaration" />
+    <exclude name="Squiz.Classes.ValidClassName"/>
 </ruleset>
