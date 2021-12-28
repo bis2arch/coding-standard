@@ -58,4 +58,7 @@
     <rule ref="v1.Security.LanguageConstruct.DirectOutput">
         <exclude-pattern>*.phtml</exclude-pattern>
     </rule>
+    <rule ref="PSR2">
+        <exclude name="PSR2.Classes.PropertyDeclaration.Underscore" />
+    </rule>
 </ruleset>
