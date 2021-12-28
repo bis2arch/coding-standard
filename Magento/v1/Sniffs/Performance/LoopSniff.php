@@ -71,9 +71,6 @@ class LoopSniff implements Sniff
             if (in_array($content, $this->countFunctions)) {
                 $error = 'Array size calculation function %s detected in loop';
                 $code = 'ArraySize';
-            } elseif (in_array($content, $this->modelLsdMethods)) {
-                $error = 'Model LSD method %s detected in loop';
-                $code = 'ModelLSD';
             } elseif (in_array($content, $this->dataLoadMethods)) {
                 $error = 'Data load %s method detected in loop';
                 $code = 'DataLoad';
