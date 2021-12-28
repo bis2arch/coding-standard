@@ -11,12 +11,6 @@ class LoopSniff implements Sniff
         'count',
     ];
 
-    protected $modelLsdMethods = [
-        'load',
-        'save',
-        'delete',
-    ];
-
     protected $dataLoadMethods = [
         'getFirstItem',
         'getChildrenIds',
