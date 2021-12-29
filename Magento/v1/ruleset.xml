@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <ruleset name="Bis2arch_coding_standard_magento1">
+    <exclude-pattern>*.min.*</exclude-pattern>
     <description>Magento 1 Coding Standard Bis2bis \ Arch</description>
     <arg name="colors"/>
     <!-- PSR 1 -->
