@@ -26,6 +26,8 @@
     <rule ref="Generic.Files.LineLength">
         <exclude-pattern>*.phtml</exclude-pattern>
         <exclude-pattern>*.html</exclude-pattern>
+        <exclude-pattern>*/sql/*</exclude-pattern>
+        <exclude-pattern>*/*setup*/*</exclude-pattern>
         <properties>
             <property name="absoluteLineLimit" value="120"/>
         </properties>
