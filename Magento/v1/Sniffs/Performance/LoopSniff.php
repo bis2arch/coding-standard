@@ -4,8 +4,7 @@ namespace Bis2arch\Magento\v1\Sniffs\Performance;
 use PHP_CodeSniffer\Files\File;
 use PHP_CodeSniffer\Sniffs\Sniff;
 
-class LoopSniff implements Sniff
-{
+class LoopSniff implements Sniff {
     protected $countFunctions = [
         'sizeof',
         'count',
@@ -42,18 +41,7 @@ class LoopSniff implements Sniff
      */
     protected $processedStackPointers = [];
 
-    public function register()
-    {
-        return [
-            T_WHILE,
-            T_FOR,
-            T_FOREACH,
-            T_DO,
-        ];
-    }
-
-    public function process(File $phpcsFile, $stackPtr)
-    {
+    public function process(File $phpcsFile, $stackPtr) {
         $tokens = $phpcsFile->getTokens();
 
         if (!array_key_exists('scope_opener', $tokens[$stackPtr])) {
@@ -81,5 +69,14 @@ class LoopSniff implements Sniff
                 $this->processedStackPointers[] = $ptr;
             }
         }
+    }
+
+    public function register() {
+        return [
+            T_WHILE,
+            T_FOR,
+            T_FOREACH,
+            T_DO,
+        ];
     }
 }
